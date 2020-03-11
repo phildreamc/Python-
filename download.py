@@ -50,7 +50,7 @@ def download(url, fileName, retry = False, chunk_size = 1024*4):
     threadmax.release()
 
 start = time.time()
-host = ''
+host = '?'
 listFile = 'list.txt'
 file = open(listFile, "r", encoding="utf-8", errors="ignore")
 threadmax = threading.BoundedSemaphore(5)
